@@ -1,6 +1,7 @@
 describe('Hello World Test', () => {
 
     beforeEach(() => {
+        // Start Fake API server
         cy.server()
         cy.route({
           method: 'GET',
@@ -18,7 +19,7 @@ describe('Hello World Test', () => {
 
     it('Show สวัสดีชาวโลก', () => {
         cy.visit('https://edison-frontend.artisandigital.tech/')
-
+        
     })
 
 })
