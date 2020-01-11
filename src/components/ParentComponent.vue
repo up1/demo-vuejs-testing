@@ -29,6 +29,7 @@ import PostsList from './PostsList'
 import { RepositoryFactory } from './../repositories/RepositoryFactory'
 const PostsRepository = RepositoryFactory.get('posts')
 
+
 export default {
   name: "parent-component",
   components: { PostsList },
